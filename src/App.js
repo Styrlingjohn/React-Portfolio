@@ -1,10 +1,12 @@
 import React from "react";
-import Portfolio from "./components/Site"
 import './App.css';
+import Website from "./components/Site";
 
 
 
-const App = () => <Portfolio />;
+function App(){
+    return < Website />;
+}
     
 
 export default App;

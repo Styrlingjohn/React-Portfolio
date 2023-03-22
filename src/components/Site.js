@@ -1,10 +1,12 @@
 import React, {useState} from "react";
-import Nav from "./NavTabs";
-import { Home } from "./pages/Home";
-import { About } from "./pages/About";
+import NavTabs from "./NavTabs";
+import  Home  from "./pages/Home";
+import  About from "./pages/About";
+import  Contact  from "./pages/Contact";
+import  Portfolio from "./pages/Portfolio";
 
 
-export default function Portfolio() {
+ function Website() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -15,10 +17,12 @@ export default function Portfolio() {
     if (currentPage === 'About') {
       return <About />;
     }
-  //   if (currentPage === 'Blog') {
-  //     return <Blog />;
-  //   }
-  //   return <Contact />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
+    if(currentPage === 'Contact'){
+    return <Contact />;
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -26,8 +30,10 @@ export default function Portfolio() {
   return (
     <div>
 
-      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
     </div>
   );
 }
+
+export default Website;

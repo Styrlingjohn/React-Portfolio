@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Nav({currentPage, handlePageChange}) {
+ function Nav({currentPage, handlePageChange}) {
   const linkStyle = { border: '1px black', padding: '5px' };
 
   return (
@@ -32,22 +32,28 @@ export default function Nav({currentPage, handlePageChange}) {
           >
             Home
           </a>
-        </li>
-
-{/* 
+        </li>  
         <li style={linkStyle} className = 'nav-tab'>
-          <a href="https://github.com/Styrlingjohn">Github</a>
-        </li>
-        <li style={linkStyle} className = 'nav-tab'>
-          <a href="https://www.linkedin.com/in/styrlingmorris/">LinkedIn</a>
-        </li>
-        <li style={linkStyle} className = 'nav-tab'>
-          <a href="">Resume</a>
+          <a 
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          >
+            Resume
+          </a>
         </li>
         <li style={linkStyle} className = 'nav-tab'>
-          <a href="#">Contact</a>
-        </li> */}
+          <a 
+          href="#contact"
+          onClick={() => handlePageChange('Contact')}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          >
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );
 }
+
+export default Nav;
