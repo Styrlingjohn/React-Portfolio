@@ -1,9 +1,10 @@
 import React from 'react';
 
  function Nav({currentPage, handlePageChange}) {
-  const linkStyle = { border: '1px black', padding: '5px' };
+  const linkStyle = { border: '1px black', padding: '5px'};
 
   return (
+    <header className='header'>
     <nav className="main-header-menu">
       <ul
         style={{
@@ -12,8 +13,20 @@ import React from 'react';
           flexDirection: 'row',
           alignItems: 'flex-start',
           justifyContent: 'flex-end',
+          textDecorationStyle: 'none',
+          
         }}
+        className="list-unstyled"
       >
+          <li style={linkStyle} className = 'nav-tab'>
+          <a 
+            href="#home"
+            onClick={() => handlePageChange('Home')}
+            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          >
+            Home
+          </a>
+        </li>  
         <li style={linkStyle} className = 'nav-tab'>
           <a 
             href="#about"
@@ -24,15 +37,6 @@ import React from 'react';
             About
           </a>
         </li>
-        <li style={linkStyle} className = 'nav-tab'>
-          <a 
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </a>
-        </li>  
         <li style={linkStyle} className = 'nav-tab'>
           <a 
           href="#resume"
@@ -53,6 +57,7 @@ import React from 'react';
         </li>
       </ul>
     </nav>
+    </header>
   );
 }
 
