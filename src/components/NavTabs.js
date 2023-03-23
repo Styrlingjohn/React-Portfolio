@@ -9,7 +9,7 @@ import React from 'react';
       <ul
         style={{
           display: 'flex',
-          fontFamily: 'helvetica',
+          fontFamily: 'Cantarell',
           flexDirection: 'row',
           alignItems: 'flex-start',
           justifyContent: 'flex-end',

@@ -4,6 +4,7 @@ import  Home  from "./pages/Home";
 import  About from "./pages/About";
 import  Contact  from "./pages/Contact";
 import  Portfolio from "./pages/Portfolio";
+import Footer from "./Footer";
 
 
  function Website() {
@@ -28,12 +29,13 @@ import  Portfolio from "./pages/Portfolio";
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
-
+    <div className="page-container">
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
+
     </div>
   );
-}
+};
 
 export default Website;
