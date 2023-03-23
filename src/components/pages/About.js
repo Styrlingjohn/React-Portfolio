@@ -4,7 +4,7 @@ import React from 'react';
   return (
     <div>
       <h1>About Page</h1>
-      <p>
+      <p className='About'>
     Currently enrolled in a full-stack computer programming bootcamp through the University of Utah.
     I am scheduled to complete the course on April 17th. I have learned many skills during my journey but 
     I am excited to further my knowledge by entering the workforce. I love to be social and interact with people.

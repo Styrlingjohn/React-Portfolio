@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: #6B7A8F;
+    background-color: #F7FFF7;
     text-align: center;
     padding-bottom: 2.5rem; 
     font-size: x-large;
@@ -19,13 +19,16 @@
   
 
   .header {
-    background-color: #a28089;
+    background-color: #887880;
     margin-top: 0px;
     margin-bottom: 58px;
     padding-top: 40px;
   }
   .links {
     padding-inline: 20px;
+    border-radius: 25px;
+    width: 90px;
+    height: 50px;
   }
 
   .footer {
@@ -35,5 +38,9 @@
     width: 100%;
     /* Height of the footer*/
     height: 90px;
-    background-color:  #a28089;
+    background-color:  #887880;
+  }
+  .About {
+    padding-left: 100px;
+    padding-right: 100px;
   }
