@@ -18,16 +18,7 @@ import React from 'react';
         }}
         className="list-unstyled"
       >
-          <li style={linkStyle} className = 'nav-tab'>
-          <a 
-            href="#home"
-            onClick={() => handlePageChange('Home')}
-            className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-          >
-            Home
-          </a>
-        </li>  
-        <li style={linkStyle} className = 'nav-tab'>
+            <li style={linkStyle} className = 'nav-tab'>
           <a 
             href="#about"
             onClick={() => handlePageChange('About')}
@@ -37,6 +28,16 @@ import React from 'react';
             About
           </a>
         </li>
+        <li style={linkStyle} className = 'nav-tab'>
+          <a 
+            href="#portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          >
+            Portfolio
+          </a>
+        </li>  
+      
         <li style={linkStyle} className = 'nav-tab'>
           <a 
           href="#resume"
