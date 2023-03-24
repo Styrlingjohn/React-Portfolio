@@ -25,7 +25,7 @@ export default function Resume() {
     <Container>
       <h1>Resume</h1>
 
-      <button onClick={onButtonClick}>Downloadable Resume</button>
+      <button onClick={onButtonClick} type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Downloadable Resume</button>
 
       <Row className='rows'>
         <Col>

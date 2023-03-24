@@ -35,6 +35,12 @@
     padding-top: 100px;
   }
 
+  .form-input{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+  }
+
 
   .rows{
     padding-top: 50px;
