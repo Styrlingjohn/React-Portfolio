@@ -1,6 +1,12 @@
 import React from 'react';
 
  function About() {
+
+  const picCss = {
+    boxShadow: '10px 5px 9px #918d8f',
+    margin: '4em',
+    padding: '1em',
+  }
   return (
     <div>
       <h1>About Me</h1>
@@ -13,8 +19,8 @@ import React from 'react';
     offer in life and am excited to apply my new learned skills to a company willing to hire me.
       </p>
 
-      <img className = 'Pics' src="/Headshot.png" alt='Pics' />
-      <img className = 'Pics' src="/Savannah and I.png" alt='Pics' />
+      <img style= {picCss} className = 'Pics' src="/Headshot.png" alt='Pics' />
+      <img style= {picCss} className = 'Pics' src="/Savannah and I.png" alt='Pics' />
 
     </div>
   );

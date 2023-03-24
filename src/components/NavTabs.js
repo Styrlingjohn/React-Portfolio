@@ -2,9 +2,15 @@ import React from 'react';
 
  function Nav({currentPage, handlePageChange}) {
   const linkStyle = { border: '1px black', padding: '5px'};
+  
 
   return (
-    <header className='header' style={{ backgroundImage: "url(/header.jpg)"}}>
+    <header className='header' style={{ backgroundImage: "url(/header.jpg)",  backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    width: '100vw', backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        width: '100vw',
+        }}>
     <nav className="main-header-menu">
       <ul
         style={{

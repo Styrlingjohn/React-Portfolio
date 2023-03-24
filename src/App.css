@@ -4,36 +4,28 @@
     padding: 0;
     font-family: 'Alkatra', cursive;
   }
-  
+
+    .header {
+    background-color: #918d8f;
+    margin-top: 0px;
+    margin-bottom: 90px;
+    padding-top: 70px;
+  }
+ 
+  .nav-tab {
+    margin-left: 20px;
+  }
+
   body {
     background-color: #F7FFF7;
     text-align: center;
     padding-bottom: 2.5rem; 
     font-size: x-large;
   }
-  
-  .nav-tab {
-    margin-left: 20px;
-  }
 
-  #page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-  
-
-  .header {
-    background-color: #918d8f;
-    margin-top: 0px;
-    margin-bottom: 58px;
-    padding-top: 40px;
-    background-image: '';
-  }
-  .links {
-    padding-inline: 20px;
-    border-radius: 25px;
-    width: 90px;
-    height: 50px;
+  .About {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .Pics {
@@ -43,6 +35,10 @@
     padding-top: 100px;
   }
 
+ 
+
+  
+  
   .footer {
     position: fixed;
     padding: 20px 10px 0px 10px;
@@ -52,7 +48,9 @@
     height: 90px;
     background-color:  #918d8f;
   }
-  .About {
-    padding-left: 100px;
-    padding-right: 100px;
+    .links {
+    padding-inline: 20px;
+    border-radius: 25px;
+    width: 90px;
+    height: 50px;
   }
