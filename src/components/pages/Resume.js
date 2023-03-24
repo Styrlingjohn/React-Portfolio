@@ -23,7 +23,7 @@ export default function Resume() {
   return (
 
     <Container>
-      <h1>Portfolio</h1>
+      <h1>Resume</h1>
 
       <button onClick={onButtonClick}>Downloadable Resume</button>
 
