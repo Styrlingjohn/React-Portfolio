@@ -35,10 +35,11 @@
     padding-top: 100px;
   }
 
- 
 
-  
-  
+  .rows{
+    padding-top: 50px;
+  }
+ 
   .footer {
     position: fixed;
     padding: 20px 10px 0px 10px;
