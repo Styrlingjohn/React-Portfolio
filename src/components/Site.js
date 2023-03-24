@@ -8,15 +8,15 @@ import Footer from "./Footer";
 
 
  function Website() {
-  const [currentPage, setCurrentPage] = useState('Resume');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
+     if (currentPage === 'About') {
+      return <About />;
+    }
     if (currentPage === 'Resume') {
       return <Resume />;
-    }
-    if (currentPage === 'About') {
-      return <About />;
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;

@@ -11,6 +11,10 @@
     padding-bottom: 2.5rem; 
     font-size: x-large;
   }
+  
+  .nav-tab {
+    margin-left: 20px;
+  }
 
   #page-container {
       position: relative;
@@ -19,16 +23,24 @@
   
 
   .header {
-    background-color: #887880;
+    background-color: #918d8f;
     margin-top: 0px;
     margin-bottom: 58px;
     padding-top: 40px;
+    background-image: '';
   }
   .links {
     padding-inline: 20px;
     border-radius: 25px;
     width: 90px;
     height: 50px;
+  }
+
+  .Pics {
+    width: 400px;
+    height: 650px;
+    padding-inline: 50px;
+    padding-top: 100px;
   }
 
   .footer {
@@ -38,7 +50,7 @@
     width: 100%;
     /* Height of the footer*/
     height: 90px;
-    background-color:  #887880;
+    background-color:  #918d8f;
   }
   .About {
     padding-left: 100px;

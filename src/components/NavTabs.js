@@ -4,7 +4,7 @@ import React from 'react';
   const linkStyle = { border: '1px black', padding: '5px'};
 
   return (
-    <header className='header'>
+    <header className='header' style={{ backgroundImage: "url(/header.jpg)"}}>
     <nav className="main-header-menu">
       <ul
         style={{
@@ -14,7 +14,6 @@ import React from 'react';
           alignItems: 'flex-start',
           justifyContent: 'flex-end',
           textDecorationStyle: 'none',
-          
         }}
         className="list-unstyled"
       >
