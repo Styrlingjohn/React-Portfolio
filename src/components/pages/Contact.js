@@ -1,91 +1,96 @@
 import React, { useState } from 'react';
-// Here we import a helper function that will check if the email is valid
-import { checkPassword, validateEmail } from '../utils/helpers';
+import { validateEmail } from '../utils/helpers';
 
 function Contact() {
-  // Create state variables for the fields in the contact
-  // We are also setting their initial values to an empty string
+
   const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [Name, setName] = useState('');
+  const [Comments, setComments] = useState('');
+
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
+
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
 
-    // Based on the input type, we set the state of either email, username, and password
+
     if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
-    } else {
-      setPassword(inputValue);
-    }
+    } else if (inputType === 'Name') {
+      setName(inputValue);
+    } else if (inputType === 'Comments') {
+      setComments(inputValue);
+    };
   };
+    const handleContactSubmit = (e) => {
 
-  const handleContactSubmit = (e) => {
-    // Preventing the default behavior of the contact submit (which is to refresh the page)
-    e.preventDefault();
+      e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    if (!checkPassword(password)) {
-      setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
-      );
-      return;
-    }
 
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setUserName('');
-    setPassword('');
-    setEmail('');
-  };
+      if (!validateEmail(email)) {
+        setErrorMessage('Enter a valid Email address');
 
-  return (
-    <div className='form'>
-      <h1>Thanks for your interest, leave </h1>
-      <contact>
-        <input
-          className="form-input"
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          className="form-input"
-          value={userName}
-          name="userName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="username"
-        />
-        <input
-         className="form-input"
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
-        />
-        <button className="form-input" type="button" onClick={handleContactSubmit}>Submit</button>
-      </contact>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
-    </div>
-  );
+        return;
+      }
+      if (!Comments) {
+        setErrorMessage('Please provide comments');
+
+        return;
+      }
+      if (!Name) {
+        setErrorMessage('Please provide your name')
+        
+        return;
+      }
+      if (email && Name && Comments){
+        setErrorMessage('Thank you for your feedback')
+
+        return;
+      }
+
+      setName('');
+      setEmail('');
+      setComments('');
+    };
+  
+    return (
+      <div className='form'>
+        <h1>Thanks for your interest, leave </h1>
+        <contact>
+          <input
+            className="form-input"
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="email"
+          />
+          <input
+            className="form-input"
+            value={Name}
+            name="Name"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="name"
+          />
+          <input
+            className="form-input"
+            value={Comments}
+            name="Comments"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Comments"
+          />
+          <button className="form-input" type="button" onClick={handleContactSubmit}>Submit</button>
+        </contact>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+      </div>
+    );
 }
 export default Contact;
