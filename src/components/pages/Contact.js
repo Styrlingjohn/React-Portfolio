@@ -57,7 +57,7 @@ function Contact() {
   
     return (
       <div className='form'>
-        <h1>Thanks for your interest, leave </h1>
+        <h1>Thanks for your interest, leave a comment about how I can improve. </h1>
         <contact>
           <input
             className="form-input"

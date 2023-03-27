@@ -40,6 +40,23 @@
     padding-right: 20px;
     margin-left: 20px;
   }
+  .card{
+    float:left; 
+    padding-right:10px; 
+    display: inline;
+    height: 350px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-port{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 
 
   .rows{
