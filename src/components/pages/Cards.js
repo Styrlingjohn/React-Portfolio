@@ -28,6 +28,16 @@ export default function Card() {
                     />
                 </a>
             </div>
+            <div className="card" style={cardStyle}>
+                <p>View the Ollisander's Website</p>
+                <a href="https://wizard-wands-production.up.railway.app/">
+                    <img
+                        className="card-img-top"
+                        src='./Wizards.png'
+                        alt="Card cap"
+                    />
+                </a>
+            </div>
         </div>
 
     );
