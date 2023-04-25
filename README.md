@@ -6,11 +6,11 @@ This is an application created through react that displays my skills with React,
 
 
 # Technologies Used
-*JavaScript
-*Git
-*React
-*Bootstrap
-*Netlify
+* JavaScript
+* Git
+* React
+* Bootstrap
+* Netlify
 
 
 ## Visuals
