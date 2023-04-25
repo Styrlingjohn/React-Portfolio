@@ -1,80 +1,81 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Alkatra', cursive;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alkatra', cursive;
+}
 
-    .header {
-    background-color: #918d8f;
-    margin-top: 0px;
-    margin-bottom: 90px;
-    padding-top: 70px;
-  }
- 
-  .nav-tab {
-    margin-left: 20px;
-  }
+.header {
+  background-color: #918d8f;
+  margin-top: 0px;
+  margin-bottom: 90px;
+  padding-top: 70px;
+}
 
-  body {
-    background-color: #F7FFF7;
-    text-align: center;
-    padding-bottom: 2.5rem; 
-    font-size: x-large;
-  }
+.nav-tab {
+  margin-left: 20px;
+}
 
-  .About {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
+body {
+  background-color: #F7FFF7;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  font-size: x-large;
+}
 
-  .Pics {
-    width: 400px;
-    height: 650px;
-    padding-inline: 50px;
-    padding-top: 100px;
-  }
+.About {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
-  .form-input{
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 20px;
-  }
-  .card{
-    float:left; 
-    padding-right:10px; 
-    display: inline;
-    height: 350px;
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.Pics {
+  width: 400px;
+  height: 650px;
+  padding-inline: 50px;
+  padding-top: 100px;
+}
 
-  .container-port{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.form-input {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+}
 
-  }
+.card {
+  float: left;
+  padding-right: 10px;
+  display: inline;
+  height: 350px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-port {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
-  .rows{
-    padding-top: 50px;
-  }
- 
-  .footer {
-    position: fixed;
-    padding: 20px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/
-    height: 90px;
-    background-color:  #918d8f;
-  }
-    .links {
-    padding-inline: 20px;
-    border-radius: 25px;
-    width: 90px;
-    height: 50px;
-  }
+.rows {
+  padding-top: 50px;
+}
+
+.footer {
+  position: fixed;
+  padding: 20px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #918d8f;
+}
+
+.links {
+  padding-inline: 20px;
+  border-radius: 25px;
+  width: 90px;
+  height: 50px;
+}

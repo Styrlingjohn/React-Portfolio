@@ -3,6 +3,9 @@ import React from 'react';
 export default function Card() {
     const cardStyle = {
         width: '30rem',
+        display: 'block',
+        padding: '1rem',
+        margin: 'auto'
         
     };
 
@@ -35,6 +38,7 @@ export default function Card() {
                         className="card-img-top"
                         src='./Wizards.png'
                         alt="Card cap"
+                        height={'80%'}
                     />
                 </a>
             </div>
