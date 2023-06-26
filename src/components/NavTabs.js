@@ -5,11 +5,7 @@ function Nav({ currentPage, handlePageChange }) {
 
 
   return (
-    <header className='header' style={{
-      backgroundImage: "url(/header.jpg)", backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-    }}>
+    <header className='header' >
       <nav className="main-header-menu">
         <ul
           style={{
@@ -49,15 +45,6 @@ function Nav({ currentPage, handlePageChange }) {
               className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
             >
               Resume
-            </a>
-          </li>
-          <li style={linkStyle} className='nav-tab'>
-            <a
-              href="#contact"
-              onClick={() => handlePageChange('Contact')}
-              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-            >
-              Contact
             </a>
           </li>
         </ul>
